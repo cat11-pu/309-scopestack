@@ -35,6 +35,6 @@ export function render(spec) {
            replay_new: replay.served, judged: first.judged, judged_bound: first.judged_bound,
            full_diff: fingerprint(closed.state) === fingerprint(fullClosed.state) ? 0 : 1,
            count: events.length,
-           tail: enterScope([[]]).length + leaveScope([[[]]]).length
+           tail: enterScope([[]]).length + leaveScope([[], []]).length
              + declareName([[]], "z").length + lookupName([["z"]], "z") };
 }
