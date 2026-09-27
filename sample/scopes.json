@@ -1,0 +1,16 @@
+{
+  "budget": 1,
+  "undeclared_error_code": "E_UNDECLARED",
+  "redeclared_error_code": "E_REDECLARED",
+  "scope_error_code": "E_UNBALANCED",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "scopes": [[]], "found": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "enter" },
+    { "id": 2, "kind": "declare", "name": "x" },
+    { "id": 3, "kind": "use", "name": "x" },
+    { "id": 4, "kind": "enter" },
+    { "id": 5, "kind": "declare", "name": "y" },
+    { "id": 6, "kind": "use", "name": "y" }
+  ]
+}
